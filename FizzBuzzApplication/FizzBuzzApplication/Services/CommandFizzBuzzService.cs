@@ -1,4 +1,5 @@
-﻿using FizzBuzzApplication.Interfaces;
+﻿using System;
+using FizzBuzzApplication.Interfaces;
 
 namespace FizzBuzzApplication.Services
 {
@@ -11,7 +12,7 @@ namespace FizzBuzzApplication.Services
 
         public override string ServiceFizzBuzz(long number)
         {
-            throw new System.NotImplementedException();
+            return String.Empty;
         }
     }
 }

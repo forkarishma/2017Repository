@@ -6,7 +6,7 @@ namespace FizzBuzzApplication.InputValidations
     {
         public bool ValidateFizzBuzznumber(long number)
         {
-            throw new System.NotImplementedException();
+            return true;
         }
     }
 }

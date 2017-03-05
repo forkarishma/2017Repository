@@ -7,7 +7,7 @@ namespace FizzBuzzApplication.InputValidations
     {
         public bool ValidateFizzBuzznumber(long number)
         {
-            if (number > Int32.MaxValue)
+            if (number < 0 || number > Int32.MaxValue)
                 return false;
             return true;
         }

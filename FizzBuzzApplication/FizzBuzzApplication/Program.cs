@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FizzBuzzApplication.Executor;
+using FizzBuzzApplication.Interfaces;
+using FizzBuzzApplication.Receiver;
 
 namespace FizzBuzzApplication
 {
@@ -14,6 +17,7 @@ namespace FizzBuzzApplication
             long number = Convert.ToInt64(Console.ReadLine());
             //implement fizzbuzz functionality
             //execute commandfizzbuzz
+            ICommandFizzBuzzExecutor cmdFizzBuzzExecutor = new CommandFizzBuzzExecutor(new CommandFizzBuzzReceiver());
         }
     }
 }

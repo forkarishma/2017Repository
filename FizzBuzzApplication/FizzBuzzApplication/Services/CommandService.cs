@@ -10,7 +10,7 @@ namespace FizzBuzzApplication.Services
         protected CommandService Service;
         //getters
         protected int Fizz => 3;
-        protected int Buzz => 5;
+        
 
         //Provide Service and if not found check for another service
         protected internal string ProvideServiceFizzBuzz(long number)

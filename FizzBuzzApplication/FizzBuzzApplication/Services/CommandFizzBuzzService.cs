@@ -6,6 +6,8 @@ namespace FizzBuzzApplication.Services
     {
         public override bool CanServiceFizzBuzz(long number)
         {
+            if(number % Fizz == 0)
+            return false;
             return true;
         }
 

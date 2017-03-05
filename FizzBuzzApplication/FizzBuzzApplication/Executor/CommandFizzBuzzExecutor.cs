@@ -4,17 +4,16 @@ namespace FizzBuzzApplication.Executor
 {
     public class CommandFizzBuzzExecutor : ICommandFizzBuzzExecutor
     {
-        private ICommandService _cmdFizzBuzzService;
-        private readonly ICommandFizzBuzzReceiver _cmdFizzBuzzReceiver;
+        private ICommandFizzBuzzReceiver CmdFizzBuzzReceiver { get; }
 
         internal CommandFizzBuzzExecutor(ICommandFizzBuzzReceiver cmdFizzBuzzReceiver)
         {
-            this._cmdFizzBuzzReceiver = cmdFizzBuzzReceiver;
+            this.CmdFizzBuzzReceiver = cmdFizzBuzzReceiver;
         }
 
         public string ExecuteFizzBuzz(long number)
         {
-            throw new System.NotImplementedException();
+            return CmdFizzBuzzReceiver.ReceiveFizzBuzzService().ProvideServiceFizzBuzz(number);
         }
     }
 }

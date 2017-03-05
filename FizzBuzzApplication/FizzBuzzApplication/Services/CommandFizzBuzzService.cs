@@ -6,11 +6,7 @@ namespace FizzBuzzApplication.Services
     {
         public override bool CanServiceFizzBuzz(long number)
         {
-            if(number % Fizz == 0)
-            return false;
-            if (number % Buzz == 0)
-                return false;
-            return true;
+            return (number % Fizz != 0 && number % Buzz != 0);
         }
 
         public override string ServiceFizzBuzz(long number)

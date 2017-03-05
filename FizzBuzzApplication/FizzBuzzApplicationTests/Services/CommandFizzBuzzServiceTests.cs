@@ -56,6 +56,21 @@ namespace FizzBuzzApplicationTests.Services
         }
 
         [TestMethod()]
+        public void CanServiceFizzBuzzTest_NumberMultipleFizzBuzz_ReturnTrue()
+        {
+            //Arrange
+            cmdService = new CommandFizzBuzzService();
+            bool result;
+            Number = 15;
+
+            //Act
+            result = cmdService.CanServiceFizzBuzz(Number);
+
+            //Assert
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod()]
         public void ServiceFizzBuzzTest_ReturnEmptyString()
         {
             //Arrange

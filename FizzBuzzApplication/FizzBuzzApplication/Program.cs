@@ -17,7 +17,7 @@ namespace FizzBuzzApplication
             long number = Convert.ToInt64(Console.ReadLine());
             //implement fizzbuzz functionality
             //execute commandfizzbuzz
-            ICommandFizzBuzzExecutor cmdFizzBuzzExecutor = new CommandFizzBuzzExecutor(new CommandFizzBuzzReceiver());
+            ICommandFizzBuzzExecutor cmdFizzBuzzExecutor = new CommandFizzBuzzExecutor();
             Console.Write(cmdFizzBuzzExecutor.ExecuteFizzBuzz(number));
 
         }

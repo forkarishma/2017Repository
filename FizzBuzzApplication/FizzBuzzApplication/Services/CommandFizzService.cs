@@ -6,14 +6,13 @@ namespace FizzBuzzApplication.Services
     {
         public override bool CanServiceFizzBuzz(long number)
         {
-            if (number%Fizz != 0)
-                return false;
-            return true;
+            return (number % Fizz == 0);
         }
 
         public override string ServiceFizzBuzz(long number)
         {
-            throw new System.NotImplementedException();
+            return DisplayFizz;
         }
+
     }
 }

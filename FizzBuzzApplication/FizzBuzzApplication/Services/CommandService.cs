@@ -11,7 +11,8 @@ namespace FizzBuzzApplication.Services
         //getters
         protected int Fizz => 3;
         protected int Buzz => 5;
-        
+        protected string DisplayFizz => "Fizz";
+
         //Provide Service and if not found check for another service
         protected internal string ProvideServiceFizzBuzz(long number)
         {

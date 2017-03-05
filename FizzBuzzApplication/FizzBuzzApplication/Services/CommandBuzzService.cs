@@ -6,7 +6,7 @@ namespace FizzBuzzApplication.Services
     {
         public override bool CanServiceFizzBuzz(long number)
         {
-            throw new System.NotImplementedException();
+           return true;
         }
 
         public override string ServiceFizzBuzz(long number)

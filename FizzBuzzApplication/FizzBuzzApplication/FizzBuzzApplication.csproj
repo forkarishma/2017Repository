@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Executor\CommandFizzBuzzExecutor.cs" />
+    <Compile Include="InputValidations\ValidateFizzBuzzNumber.cs" />
     <Compile Include="Interfaces\ICommandFizzBuzzExecutor.cs" />
     <Compile Include="Interfaces\ICommandFizzBuzzReceiver.cs" />
     <Compile Include="Interfaces\ICommandFizzBuzzService.cs" />
     <Compile Include="Interfaces\ICommandService.cs" />
+    <Compile Include="Interfaces\IValidateFizzBuzzNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receiver\CommandFizzBuzzReceiver.cs" />

@@ -51,6 +51,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="InputValidations\ValidateFizzBuzzNumberTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CommandBuzzServiceTests.cs" />
     <Compile Include="Services\CommandFizzBuzzServiceTests.cs" />

@@ -51,6 +51,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receiver\CommandFizzBuzzReceiver.cs" />
+    <Compile Include="Services\CommandBuzzService.cs" />
     <Compile Include="Services\CommandFizzBuzzService.cs" />
     <Compile Include="Services\CommandFizzService.cs" />
     <Compile Include="Services\CommandService.cs" />

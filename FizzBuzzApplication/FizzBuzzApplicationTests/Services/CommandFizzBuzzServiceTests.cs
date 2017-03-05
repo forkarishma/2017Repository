@@ -9,7 +9,7 @@ namespace FizzBuzzApplicationTests.Services
     public class CommandFizzBuzzServiceTests
     {
         private ICommandService cmdService;
-        private long number = 1234;
+        public long Number { get; set; } = 1234;
 
         [TestMethod()]
         public void CanServiceFizzBuzzTest_NumberNotFizzBuzz_ReturnTrue()
@@ -19,7 +19,7 @@ namespace FizzBuzzApplicationTests.Services
             bool result;
 
             //Act
-            result = cmdService.CanServiceFizzBuzz(number);
+            result = cmdService.CanServiceFizzBuzz(Number);
 
             //Assert
             Assert.IsTrue(result);
@@ -31,10 +31,10 @@ namespace FizzBuzzApplicationTests.Services
             //Arrange
             cmdService = new CommandFizzBuzzService();
             bool result;
-            number = 3;
+            Number = 3;
 
             //Act
-            result = cmdService.CanServiceFizzBuzz(number);
+            result = cmdService.CanServiceFizzBuzz(Number);
 
             //Assert
             Assert.IsFalse(result);
@@ -46,10 +46,10 @@ namespace FizzBuzzApplicationTests.Services
             //Arrange
             cmdService = new CommandFizzBuzzService();
             bool result;
-            number = 5;
+            Number = 5;
 
             //Act
-            result = cmdService.CanServiceFizzBuzz(number);
+            result = cmdService.CanServiceFizzBuzz(Number);
 
             //Assert
             Assert.IsFalse(result);
@@ -63,7 +63,7 @@ namespace FizzBuzzApplicationTests.Services
             string result;
 
             //Act
-            result = cmdService.ServiceFizzBuzz(number);
+            result = cmdService.ServiceFizzBuzz(Number);
 
             //Assert
             Assert.AreEqual(String.Empty, result);

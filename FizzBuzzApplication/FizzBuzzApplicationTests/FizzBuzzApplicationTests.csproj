@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CommandFizzBuzzServiceTests.cs" />
+    <Compile Include="Services\CommandFizzServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FizzBuzzApplication\FizzBuzzApplication.csproj">

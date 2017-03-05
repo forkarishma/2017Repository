@@ -39,5 +39,19 @@ namespace FizzBuzzApplicationTests.Services
             Assert.IsFalse(result);
         }
 
+        [TestMethod()]
+        public void ServiceFizzBuzzTest_ReturnsBuzz()
+        {
+            //Arrange
+            cmdService = new CommandBuzzService();
+            string result;
+
+            //Act
+            result = cmdService.ServiceFizzBuzz(Number);
+
+            //Assert
+            Assert.AreEqual("Buzz", result);
+        }
+
     }
 }

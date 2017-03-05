@@ -13,7 +13,7 @@ namespace FizzBuzzApplication.Services
 
         public override string ServiceFizzBuzz(long number)
         {
-            throw new System.NotImplementedException();
+            return DisplayBuzz;
         }
     }
 }

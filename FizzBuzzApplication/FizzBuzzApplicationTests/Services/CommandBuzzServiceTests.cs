@@ -1,20 +1,28 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using FizzBuzzApplication.Interfaces;
+using FizzBuzzApplication.Services;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FizzBuzzApplicationTests.Services
 {
     [TestClass()]
     public class CommandBuzzServiceTests
     {
-        [TestMethod()]
-        public void CanServiceFizzBuzzTest()
-        {
-            Assert.Fail();
-        }
+        private ICommandService cmdService;
+        public long Number { get; } = 5;
 
         [TestMethod()]
-        public void ServiceFizzBuzzTest()
+        public void CanServiceFizzBuzzTest_NumberBuzz_ReturnTrue()
         {
-            Assert.Fail();
+            //Arrange
+            cmdService = new CommandBuzzService();
+            bool result;
+
+            //Act
+            result = cmdService.CanServiceFizzBuzz(Number);
+
+            //Assert
+            Assert.IsTrue(result);
         }
+
     }
 }

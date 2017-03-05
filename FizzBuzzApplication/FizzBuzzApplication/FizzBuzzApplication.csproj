@@ -45,8 +45,12 @@
   <ItemGroup>
     <Compile Include="Executor\CommandFizzBuzzExecutor.cs" />
     <Compile Include="Interfaces\ICommandFizzBuzzExecutor.cs" />
+    <Compile Include="Interfaces\ICommandFizzBuzzReceiver.cs" />
+    <Compile Include="Interfaces\ICommandService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receiver\CommandFizzBuzzReceiver.cs" />
+    <Compile Include="Services\CommandService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

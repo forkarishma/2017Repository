@@ -40,5 +40,19 @@ namespace FizzBuzzApplicationTests.InputValidations
             Assert.IsTrue(number > Int32.MaxValue);
             Assert.IsFalse(result);
         }
+
+        [TestMethod()]
+        public void ValidateFizzBuzzNumber_ExpectNumberLessThan0_ReturnFalse()
+        {
+            //Arrange
+            long number = -1;
+
+            //Act
+            result = ValidateFizzBuzz.ValidateFizzBuzznumber(number);
+
+            //Assert
+            Assert.IsTrue(number < 0);
+            Assert.IsFalse(result);
+        }
     }
 }

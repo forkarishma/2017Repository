@@ -19,6 +19,7 @@ namespace FizzBuzzApplication
             //execute commandfizzbuzz
             ICommandFizzBuzzExecutor cmdFizzBuzzExecutor = new CommandFizzBuzzExecutor();
             Console.Write(cmdFizzBuzzExecutor.ExecuteFizzBuzz(number));
+            Console.Read();
 
         }
     }

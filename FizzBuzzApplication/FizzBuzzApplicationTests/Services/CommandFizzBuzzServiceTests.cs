@@ -23,5 +23,20 @@ namespace FizzBuzzApplicationTests.Services
             //Assert
             Assert.IsTrue(result);
         }
+
+        [TestMethod()]
+        public void CanServiceFizzBuzzTest_NumberFizz_ReturnFalse()
+        {
+            //Arrange
+            cmdService = new CommandFizzBuzzService();
+            bool result;
+            number = 3;
+
+            //Act
+            result = cmdService.CanServiceFizzBuzz(number);
+
+            //Assert
+            Assert.IsFalse(result);
+        }
     }
 }

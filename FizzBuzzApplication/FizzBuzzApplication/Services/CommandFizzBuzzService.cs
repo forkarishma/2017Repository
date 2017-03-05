@@ -8,6 +8,8 @@ namespace FizzBuzzApplication.Services
         {
             if(number % Fizz == 0)
             return false;
+            if (number % Buzz == 0)
+                return false;
             return true;
         }
 

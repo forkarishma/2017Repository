@@ -26,5 +26,19 @@ namespace FizzBuzzApplicationTests.InputValidations
             Assert.IsTrue(number <= Int32.MaxValue);
             Assert.IsTrue(result);
         }
+
+        [TestMethod()]
+        public void ValidateFizzBuzzNumber_ExpectNumberMoreThan32BitInteger_ReturnFalse()
+        {
+            //Arrange
+            long number = 12345678910;
+
+            //Act
+            result = ValidateFizzBuzz.ValidateFizzBuzznumber(number);
+
+            //Assert
+            Assert.IsTrue(number > Int32.MaxValue);
+            Assert.IsFalse(result);
+        }
     }
 }

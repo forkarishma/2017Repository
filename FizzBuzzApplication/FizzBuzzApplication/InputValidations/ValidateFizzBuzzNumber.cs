@@ -1,4 +1,5 @@
-﻿using FizzBuzzApplication.Interfaces;
+﻿using System;
+using FizzBuzzApplication.Interfaces;
 
 namespace FizzBuzzApplication.InputValidations
 {
@@ -6,6 +7,8 @@ namespace FizzBuzzApplication.InputValidations
     {
         public bool ValidateFizzBuzznumber(long number)
         {
+            if (number > Int32.MaxValue)
+                return false;
             return true;
         }
     }

@@ -1,4 +1,5 @@
-﻿using FizzBuzzApplication.Interfaces;
+﻿using System;
+using FizzBuzzApplication.Interfaces;
 using FizzBuzzApplication.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -52,6 +53,20 @@ namespace FizzBuzzApplicationTests.Services
 
             //Assert
             Assert.IsFalse(result);
+        }
+
+        [TestMethod()]
+        public void ServiceFizzBuzzTest_ReturnEmptyString()
+        {
+            //Arrange
+            cmdService = new CommandFizzBuzzService();
+            string result;
+
+            //Act
+            result = cmdService.ServiceFizzBuzz(number);
+
+            //Assert
+            Assert.AreEqual(String.Empty, result);
         }
     }
 }
